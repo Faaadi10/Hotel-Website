@@ -1,0 +1,314 @@
+/* CSS Reset */
+/*We're going to clear everything that's there by default, first we clear margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    /* If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now! */
+}
+
+/* Main Styling */
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+
+}
+
+/* Link Styling */
+a{
+    color: #333;
+    text-decoration: none; 
+    /*text decoration is used to remove the underline*/
+
+}
+
+/* To provide spacing between lines*/
+h1,h2,h3{
+    padding-bottom: 20px;
+    
+}
+
+/* Paragrapgh Styling */
+p{
+    margin: 10px 0;
+}
+/* Utility Classes */
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.text-primary {
+    color: #f7c08a;
+}
+
+.lead {
+    font-size: 18px;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background: #333;
+    padding: 13px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+.btn-light{
+
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+    background: #f4f4f4;
+    padding: 13px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+
+}
+.bg-dark{
+
+    background: #333;
+    color: #fff;
+
+}
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-primary{
+    background: darkgray;
+    color: #333;
+}
+.bg-secondary{
+    background: #f7c08a;
+    color: #333;
+}
+
+
+
+.btn:hover{
+background:#f7c08a;
+color: #333;
+
+}
+.clr{
+    clear: both;
+}
+
+/*We'rre creating an utility class for padding in case we've to use later*/
+.pad1{padding:10px 0;} /*we're giving padding 10px top and bottom*/
+.pad2{padding: 20px 0;} /*we're giving padding 20px top and bottom*/
+.pad3{padding: 30px 0;} /*we're giving padding 30px top and bottom*/
+
+
+/* navbar styling */
+#navbar {
+    background: #333;
+    color: #fff;
+    overflow: auto;
+    /*overflow auto so that the background shows no matter what.*/
+
+}
+
+#navbar a {
+    color: white;
+}
+
+#navbar h1{
+    float: left;
+    /*Inorder to move the HBT towards left*/
+    padding-top: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+    /*Inorder to move the home, about me and contact me towards right*/
+}
+
+#navbar ul li{
+    float: left;
+    /*Inorder to align everything in a row*/
+}
+
+#navbar ul li a{
+    /*Inorder to style home, about me and contact me texts */
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover, 
+#navbar ul li a.current {
+    /*Inorder to change the colour of the text when when we hover and as well as when we are on that page itself*/
+    background: #444;
+    color:#f7c08a ;
+}
+
+/*Showcase Styling*/
+#showcase {
+    background: url('../images/showcase.jpg ') no-repeat
+    center center/cover;
+    height: 600px;
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+
+
+}
+#showcase .showcase-content h1{
+    font-size: 60 px;
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+/*Home info*/
+#home-info{
+    height: 400px;
+    
+}
+
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('../images/photo-1.jpg')no-repeat;
+    min-height: 100%;
+}
+#home-info .info-content{
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#home-info .info-content p{
+/*In order to target the paragraph of home info section*/
+    padding: 5px;
+
+}
+
+/*Features Section*/
+
+.box{
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+
+}
+
+.box i{
+    margin-bottom: 10px;
+}
+
+/*Footer Styling*/
+
+#main-footer{
+
+    text-align: center;
+    background: #444;
+    color: white;
+    padding: 20px;
+
+}
+
+/*about page styling*/
+
+#about-info .info-right {
+
+    float:right ;
+    width: 50%;
+    min-height: 100%;
+
+}
+
+#about-info .info-right img {
+    display: block;
+    width: 70%;
+    border-radius: 50%;
+
+
+}
+
+#about-info .info-left {
+
+    /*we're targeting the info-left class within the about-info id*/
+    float: left;
+    width: 50%;
+    min-height: 100%;
+
+}   
+
+/*testimonials styling*/
+#testimonials{
+
+    height: 600px;
+    background: url('../images/test-bg.jpg')no-repeat center center/cover;
+    padding-top: 100px;
+
+}
+
+#testimonials .testimonial img{
+/*to reduce the size of images of testimonials*/
+width: 100px;
+float: left;
+margin-right: 20px; /*to push the text towards right feom the margin of the image*/
+border-radius: 10px;
+}
+
+#testimonials h1{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#testimonials .testimonial{
+
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+/*contact form styling*/
+
+#contact-form .form-group {
+/*targeting the form-group class of contact-form ID*/
+
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block ;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+
+}
+
+#contact-form textarea{
+   height: 200px;
+
+}
+  
